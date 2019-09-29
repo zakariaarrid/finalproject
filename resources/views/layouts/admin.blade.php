@@ -12,7 +12,7 @@
     <title>Admin</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <link href="{{asset('css/app1.css')}}" rel="stylesheet">
 
     <link href="{{asset('css/libs.css')}}" rel="stylesheet">
 
@@ -29,7 +29,7 @@
 
 </head>
 
-<body id="admin-page">
+<body id="admin-page" style="padding-top: 0px;">
 
 <div id="wrapper">
 
@@ -56,7 +56,7 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
-                <ul class="dropdown-menu dropdown-user">
+                <ul class="dropdown-menu dropdown-user" style="height:auto;">
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                     </li>
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
@@ -347,7 +347,8 @@
 <!-- /#wrapper -->
 
 <!-- jQuery -->
-<script src="{{asset('js/libs.js')}}"></script>
+
+<script src="{{asset('js/app1.js')}}"></script>
 
 
 @yield('footer')
