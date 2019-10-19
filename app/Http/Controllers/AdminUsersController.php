@@ -121,4 +121,12 @@ class AdminUsersController extends Controller
     {
         //
     }
+    /**
+     * test if admin
+     */
+    public function isAdmin(){
+        if($this->role->name=="administrator"){
+          return true;
+        }else return false;
+    }
 }
