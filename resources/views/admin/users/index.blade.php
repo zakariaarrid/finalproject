@@ -1,5 +1,8 @@
 @extends("layouts.admin")
 @section("content")
+    @if(\Illuminate\Support\Facades\Session::has('deleted_user'))
+        <p>{{session('deleted_user')}}</p>
+    @endif
  <h1>Users</h1>
  <table class="table">
      <thead>
