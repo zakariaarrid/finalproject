@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPhotoIdToUsers extends Migration
+class Updatetable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddPhotoIdToUsers extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('photo_id')->default(0);
+        Schema::table('posts', function (Blueprint $table) {
+            $table->integer('category_id')->nullable()->change();
         });
     }
 
@@ -25,8 +25,6 @@ class AddPhotoIdToUsers extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('photo_id');
-        });
+        //
     }
 }
