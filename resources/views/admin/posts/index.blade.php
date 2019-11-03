@@ -20,7 +20,7 @@
                  <tr>
                      <td>{{$post->id}}</td>
                      <td><a href={{route('posts.edit',$post->id)}}>{{$post->user->name}}</a></td>
-                     <td>{{$post->category_id}}</td>
+                     <td>{{$post->category ? $post->category->name : 'uncategorized'}}</td>
                      <td><img style="height:100px;"  src="{{$post->photo ? $post->photo->file:"https://via.placeholder.com/150"}}"></td>
                      <td>{{$post->title}}</td>
                      <td>{{$post->body}}</td>
